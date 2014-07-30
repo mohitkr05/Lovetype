@@ -4,10 +4,11 @@ Lovetype
 
 
 
-Version 1.1
+Version 1.2
 ==========================
 - Added theme options
 - Added Support for post formats
+- Fixed errors
 
 
 
