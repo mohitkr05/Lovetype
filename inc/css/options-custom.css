@@ -1,0 +1,41 @@
+/*
+File Name: Options Custom
+Description: Custom css for theme options
+Version: 1.1
+Author: WebConnect
+Since: 0.0.6
+License: GNU General Public License v2
+License URI: license.txt
+*/
+
+
+#optionsframework-metabox {
+  margin-right: 305px;
+}
+
+#optionsframework {
+  display: inline;
+  float: left;
+  max-width: 100%;
+  width: 100%;
+}
+#optionsframework .controls .of-radio-img-img {
+  height: 100px;
+  width: 120px;
+}
+
+#optionsframework-sidebar {
+  display: inline;
+  float: right;
+  width: 280px;
+}
+#optionsframework-sidebar a {
+  text-decoration: none;
+}
+#optionsframework-sidebar .metabox-holder {
+  padding-top: 0;
+}
+
+#wpbody-content #optionsframework-sidebar .metabox-holder {
+  padding-top: 0;
+}
