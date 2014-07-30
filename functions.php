@@ -7,6 +7,7 @@ require get_template_directory() . '/lib/template-tags.php';
 require get_template_directory() . '/lib/extras.php';
 require get_template_directory() . '/lib/customizer.php';
 require get_template_directory() . '/lib/jetpack.php';
+require get_template_directory() . '/lib/custom-header.php';
 define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/admin/' );
 require_once dirname( __FILE__ ) . '/admin/options-framework.php';
 //bootstrap nav walker

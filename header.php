@@ -19,30 +19,39 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
 <div id="page" class="hfeed site">
-	
-	<header class="banner navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>/"><?php bloginfo('name'); ?></a>
-    </div>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'lovetype' ); ?></a>
 
-    <nav class="collapse navbar-collapse" role="navigation">
-      <?php
-        if (has_nav_menu('primary_navigation')) :
-          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-        endif;
-      ?>
-    </nav>
-  </div>
-</header>
+	<?php if ( get_header_image() ) : ?>
+		<div class="site-header-image">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<div style="background-image: url('<?php header_image(); ?>')"></div>
+			</a>
+		</div>
+	<?php endif; // End header image check. ?>
+	<div class="banner navbar navbar-default navbar-static-top" role="banner">
+	<div class="container">
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>/"><?php bloginfo('name'); ?></a>
+		</div>
+
+			<nav class="collapse navbar-collapse" role="navigation">
+				<?php
+					if (has_nav_menu('primary_navigation')) :
+					wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+					endif;
+				?>
+			</nav>
+	</div> <!--container-->
+	</div> <!--navbar-->
 
 
-
-	<div id="content" class="site-content bgimage container">
+<div id="content" class="site-content bgimage container">

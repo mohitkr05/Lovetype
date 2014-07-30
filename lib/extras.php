@@ -87,3 +87,32 @@ function lovetype_setup_author() {
 	}
 }
 add_action( 'wp', 'lovetype_setup_author' );
+
+
+/**
+ * Get first image from the_content()
+ */
+ 
+function lovetype_get_first_image( $content ) {
+
+	$images = array();
+	
+	preg_match_all( '!<img.*src=[\'"]([^"]+)[\'"].*/?>!iUs', $content, $matches );
+	
+	if ( !empty( $matches[1] ) ) {
+		foreach ( $matches[1] as $match ) {
+			if ( stristr( $match, '/smilies/' ) )
+				continue;
+
+			$images[] = array(
+				'type'  => 'image',
+				'from'  => 'html',
+				'src'   => html_entity_decode( $match ),
+				'href'  => '', // No link to apply to these. Might potentially parse for that as well, but not for now
+			);
+		}
+		
+		return $images[0]; //Return the first image
+	}
+	
+}
