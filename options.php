@@ -165,44 +165,7 @@ function optionsframework_options() {
 		)
 	);
 						
-	$options[] = array( 
-		'name'    => __( 'Global Layouts', 'lovetype' ),
-		'desc'    => __( 'Left content, right content or one column', 'lovetype' ),
-		'id'      => 'lovetype_layouts',
-		'std'     => 'lcontent',
-		'type'    => 'images',
-		'options' => array(
-			'lcontent'  => $layoutpath . '2cr.png',
-			'rcontent'  => $layoutpath . '2cl.png',
-			'onecolumn' => $layoutpath . '1col.png',
-		)
-	);
-	
-	
-	$options[] = array( 
-		'name'    => __( 'Content Layouts', 'lovetype' ),
-		'desc'    => __( 'Fixed or Fluid layouts', 'lovetype' ),
-		'id'      => 'lovetype_content_layouts',
-		'std'     => 'content_fixed',
-		'type'    => 'images',
-		'options' => array(
-			'fixed' => $layoutpath . 'l-mag.png',
-			'fluid'  => $layoutpath . 'l-standard.png'
-		)
-	);
 
-	$options[] = array( 
-		'name'    => __( 'Home Page Layouts', 'lovetype' ),
-		'desc'    => __( 'Two columns or one column', 'lovetype' ),
-		'id'      => 'lovetype_home_layouts',
-		'std'     => 'one-col',
-		'type'    => 'images',
-		'options' => array(
-			'two-cols' => $layoutpath . 'l-mag.png',
-			'one-col'  => $layoutpath . 'l-standard.png'
-		)
-	);
-	
 	/* ============================== End Theme Settings ================================= */	
 	
 	$options[] = array( 
