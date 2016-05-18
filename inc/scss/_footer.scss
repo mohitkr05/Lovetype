@@ -1,0 +1,99 @@
+/* Footer widgets */
+#bottom {
+	border-top: 5px solid #18BC9C;
+	padding: 20px 0px 40px 0px;
+ }
+ 
+	#bottom ul {
+		margin: 0px 0px;
+		padding: 0px;
+	 }
+ 
+	#bottom a {color: #000;}
+ 
+		#bottom a:hover {color: #B83C11;}
+ 
+h3.bothead {
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+	text-transform: uppercase;
+ }
+ 
+.botwid {color: #aaa;}
+ 
+	.botwid ul {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px 0px 0px 0px;
+	 }
+ 
+	.botwid li {
+		border-bottom: 1px dotted rgba(255,255,255,.2);
+		list-style-type: none;
+		margin: 0;
+		padding: 0px 0px;
+	 }
+ 
+	.botwid ul ul {
+		background-repeat: no-repeat;
+		list-style-type: none;
+		margin: 0;
+		padding: 0px 0px 0px 0px;
+	 }
+ 
+		.botwid ul ul ul {
+			border: 0;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		 }
+ 
+			.botwid ul ul ul ul {
+				border: 0;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			 }
+ 
+	.botwid ul li {
+		clear: left;
+		color: #aaa;
+		height: 100%;
+		line-height: 18px;
+		list-style-type: none;
+	 }
+ 
+		.botwid ul li a:link, .botwid ul li a:visited {
+			color: #aaa;
+			display: block;
+			padding: 7px 0px 7px 0px;
+			text-decoration: none;
+		 }
+ 
+		.botwid ul li a:hover {color: #fff;}
+ 
+	.botwid p {
+		line-height: 150%;
+		margin: 0;
+		padding: 5px 0px;
+	 }
+ 
+	.botwid table {
+		color: #818181;
+		text-align: center;
+		width: 100%;
+	 }
+ 
+	.botwid ul#recentcomments li.recentcomments {padding: 7px 0;}
+ 
+/* Footer */
+.site-footer {
+	background: none repeat scroll 0 0 #26282d;
+	color: #767a7e;
+	font-size: 13px;
+	padding: 10px 0px;
+	text-align: center;
+ }
+ 

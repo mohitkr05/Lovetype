@@ -1,0 +1,19 @@
+
+
+/* Banner - styles used in case the user sets a header image */
+
+.site-header-image div {
+  overflow: hidden;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.site-header-image {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}

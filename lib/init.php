@@ -228,16 +228,14 @@ add_action( 'widgets_init', 'lovetype_widgets_init' );
  * Enqueue scripts and styles.
  */
 function lovetype_scripts() {
-	$bs_theme = of_get_option( 'lovetype_bootswatch' );
-	  wp_enqueue_style('bootstrap', get_template_directory_uri() .
-        '/inc/css/bootstrap.min.css');
-     wp_enqueue_style( "options_bs_$bs_theme", "//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/$bs_theme/bootstrap.min.css",false, null, 'all' );
-    wp_enqueue_style('font-awesome', get_template_directory_uri() .
-        '/inc/css/font-awesome.min.css');
-        wp_enqueue_style('font-awesome', get_template_directory_uri() .
-        '/inc/css/base.css');
-        wp_enqueue_style('sociallikes', get_template_directory_uri() .
-        '/inc/css/social-likes_birman.css');
+    
+     wp_enqueue_style('lovetypestyle', get_template_directory_uri() .   '/inc/css/style.css');
+	//$bs_theme = of_get_option( 'lovetype_bootswatch' );
+//	  wp_enqueue_style('bootstrap', get_template_directory_uri() .      '/inc/css/bootstrap.min.css');
+    // wp_enqueue_style( "options_bs_$bs_theme", "//maxcdn.bootstrapcdn.com/bootswatch/3.1.1/$bs_theme/bootstrap.min.css",false, null, 'all' );
+    //wp_enqueue_style('font-awesome', get_template_directory_uri() .  '/inc/css/font-awesome.min.css');
+    //wp_enqueue_style('font-awesome', get_template_directory_uri() .  '/inc/css/base.css');
+        //wp_enqueue_style('sociallikes', get_template_directory_uri() .        '/inc/css/social-likes_birman.css');
         wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() .
         '/inc/js/bootstrap.min.js');
@@ -248,7 +246,7 @@ function lovetype_scripts() {
          wp_enqueue_script('retinajs', get_template_directory_uri() .
         '/inc/js/retina.min.js');
         
-	wp_enqueue_style( 'lovetype-style', get_stylesheet_uri() );
+//	wp_enqueue_style( 'lovetype-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'lovetype-skip-link-focus-fix', get_template_directory_uri() . '/inc/js/skip-link-focus-fix.js', array(), '20130115', true );
 

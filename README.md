@@ -4,6 +4,13 @@ Lovetype
 
 
 
+
+Version 1.3
+=========================
+- Added SASS
+
+
+
 Version 1.2
 ==========================
 - Added theme options

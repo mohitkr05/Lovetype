@@ -1,0 +1,16 @@
+
+/** navigation **/
+.nav.nav-justified.navtop {position: relative;}
+ 
+	.nav.nav-justified.navtop li a {
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		border-top: 5px solid rgba(0, 0, 0, 0);
+		color: #dadada;
+		font-size: 16px;
+		padding: 20px 4px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s ease-in-out;
+	 }
+ 
