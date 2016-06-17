@@ -5815,7 +5815,6 @@ html, body {
 body {
   background-color: #faf4f4;
   color: #868686;
-  font-family: 'Open Sans Condensed', sans-serif;
   line-height: 1.5;
   word-wrap: break-word;
   -ms-word-wrap: break-word; }
@@ -5857,7 +5856,6 @@ body {
 h1, h2, h3, h4 {
   border-bottom: 1px dashed #ccc;
   color: #000;
-  font-family: 'Dancing Script', cursive;
   font-weight: normal;
   padding-bottom: 38px;
   text-shadow: 2px 2px 0px #ccc; }
